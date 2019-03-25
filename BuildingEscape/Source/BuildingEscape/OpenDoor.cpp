@@ -30,12 +30,16 @@ void UOpenDoor::OpenDoor()
 {
 	// Find the owning actor
 	AActor* Owner = GetOwner();
-
-	//set up transformer
-	FRotator NewRotation = FRotator(0.0f, 0.0f, 0.0f);
-
 	//set door roatation
-	Owner->SetActorRotation(NewRotation);
+	Owner->SetActorRotation(FRotator(0.0f, 0.0f, 0.0f));
+}
+
+void UOpenDoor::CloseDoor()
+{
+	// Find the owning actor
+	AActor* Owner = GetOwner();
+	//set door roatation
+	Owner->SetActorRotation(FRotator(0.0f, 90.0f, 0.0f));
 }
 
 
@@ -44,8 +48,13 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (PressurePlate->IsOverlappingActor(ActorThatOpens)) { OpenDoor(); }
-	//if the actor that opens is the volume
-	
+	if (PressurePlate->IsOverlappingActor(ActorThatOpens)) { 
+		OpenDoor(); //open door if trigger volume is occupied
+		LastDoorOpenTime = GetWorld()->GetTimeSeconds();
+	}
+
+	if (GetWorld()->GetTimeSeconds() - LastDoorOpenTime >= CloseDoorDelay) {
+		CloseDoor();
+	}
 }
 
