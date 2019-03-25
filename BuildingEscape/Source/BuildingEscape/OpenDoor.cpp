@@ -1,6 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "OpenDoor.h"
+#include "Runtime/Engine/Classes/GameFramework/Actor.h"
+#include "Runtime/Engine/Classes/Engine/World.h"
 #include "GameFramework/Actor.h"
 
 
@@ -20,11 +22,17 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
+;
+}
+
+void UOpenDoor::OpenDoor()
+{
 	// Find the owning actor
 	AActor* Owner = GetOwner();
-	
+
 	//set up transformer
-	FRotator NewRotation = FRotator(0.0f,0.0f,0.0f);
+	FRotator NewRotation = FRotator(0.0f, 0.0f, 0.0f);
 
 	//set door roatation
 	Owner->SetActorRotation(NewRotation);
@@ -36,6 +44,8 @@ void UOpenDoor::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	if (PressurePlate->IsOverlappingActor(ActorThatOpens)) { OpenDoor(); }
+	//if the actor that opens is the volume
+	
 }
 

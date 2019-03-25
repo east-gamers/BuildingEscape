@@ -1,15 +1,10 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
   Compiling game modules for hot reload
-  Parsing headers for BuildingEscapeEditor
-    Running UnrealHeaderTool "C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\BuildingEscape.uproject" "C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BuildingEscapeEditor in 10.6898737 seconds
-  Performing 5 actions (2 in parallel)
+  Performing 3 actions (2 in parallel)
   OpenDoor.cpp
-  BuildingEscape.init.gen.cpp
-  OpenDoor.gen.cpp
-  [4/5] Link UE4Editor-BuildingEscape-7265.dll
-  [5/5] Link UE4Editor-BuildingEscape-7265.lib
-     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-7265.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-7265.exp
-     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-7265.suppressed.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-7265.suppressed.exp
+  [2/3] Link UE4Editor-BuildingEscape-6397.dll
+  [3/3] Link UE4Editor-BuildingEscape-6397.lib
+     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-6397.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-6397.exp
+     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-6397.suppressed.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-6397.suppressed.exp
   Deploying BuildingEscapeEditor Win64 Development...
-  Total build time: 15.63 seconds (Local executor: 2.64 seconds)
+  Total build time: 31.33 seconds (Local executor: 15.57 seconds)
