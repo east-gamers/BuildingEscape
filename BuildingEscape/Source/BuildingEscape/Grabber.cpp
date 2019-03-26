@@ -55,7 +55,23 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		10.0f
 	);
 
-	//draw a red line in world to visualize
+	///setup query parametoers
+	FCollisionQueryParams TraceParameters(FName(TEXT("")), false, GetOwner());
+
+	FHitResult Hit;
+	GetWorld()->LineTraceSingleByObjectType(
+		OUT Hit,
+		PlayerViewPointLocation,
+		LineTraceEnd,
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+		TraceParameters
+		);
+	AActor* ActorHit = Hit.GetActor();
+	if (ActorHit) {
+		UE_LOG(LogTemp, Warning, TEXT("object hit: %s"), *(ActorHit->GetName()));
+	}
+	
+
 	//see what we hit
 }
 
