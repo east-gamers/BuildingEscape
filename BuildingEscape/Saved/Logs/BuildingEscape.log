@@ -643,3 +643,144 @@ LogInit: Object subsystem initialized
 [2019.03.27-05.00.00:485][ 87]LogSavePackage: Save=265.07ms
 [2019.03.27-05.00.00:485][ 87]LogSavePackage: Moving '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Saved/NewMap_BuiltDataEFAD56444239BF2509E61096B31AC68D.tmp' to '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap_BuiltData.uasset'
 [2019.03.27-05.00.00:489][ 87]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap_BuiltData.uasset
+[2019.03.27-05.01.45:301][518]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.03.27-05.01.45:363][521]LogTemp: Repeating last play command: Selected Viewport
+[2019.03.27-05.01.45:454][521]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.03.27-05.01.45:455][521]PIE: New page: PIE session: NewMap (Mar 26, 2019, 5:01:45 PM)
+[2019.03.27-05.01.45:455][521]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2019.03.27-05.01.45:468][521]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012545s)
+[2019.03.27-05.01.45:470][521]LogAIModule: Creating AISystem for world NewMap
+[2019.03.27-05.01.45:471][521]LogPlayLevel: PIE: World Init took: (0.001914s)
+[2019.03.27-05.01.45:471][521]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.015929s)
+[2019.03.27-05.01.45:506][521]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.03.27-05.01.45:543][521]LogInit: FAudioDevice initialized.
+[2019.03.27-05.01.45:583][521]LogLoad: Game class is 'MyBuildingEscapeGameModeBase_BP_C'
+[2019.03.27-05.01.45:591][521]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 60) at 2019.03.26-23.01.45
+[2019.03.27-05.01.45:592][521]LogWorld: Bringing up level for play took: 0.007963
+[2019.03.27-05.01.45:595][521]PIE: Play in editor start time for /Game/UEDPIE_0_NewMap 0.514
+[2019.03.27-05.01.50:473][611]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Chair)
+[2019.03.27-05.01.58:810][737]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_TableRound)
+[2019.03.27-05.02.12:481][944]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.03.27-05.02.23:173][ 73]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.03.27-05.02.25:930][160]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.02.25:932][160]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.02.26:189][170]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.02.26:758][191]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.02.26:758][191]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.02.26:891][196]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.23.39:708][140]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.03.27-05.23.39:923][141]Candidate modules for hot reload:
+[2019.03.27-05.23.39:924][141]  BuildingEscape
+[2019.03.27-05.23.39:924][141]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe BuildingEscape -ModuleWithSuffix=BuildingEscape,2928 Win64 Development -editorrecompile -canskiplink "C:/Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/BuildingEscape.uproject" ]
+[2019.03.27-05.23.39:929][141]Warning: Starting HotReload took  0.2s.
+[2019.03.27-05.24.21:025][275]CompilerResultsLog: New page: Compilation - Mar 26, 2019, 5:24:21 PM
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Creating makefile for hot reloading BuildingEscape (modules to compile have changed)
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Compiling game modules for hot reload
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Performing 3 actions (2 in parallel)
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Grabber.cpp
+[2019.03.27-05.24.21:030][275]CompilerResultsLog: Error: C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Source\BuildingEscape\Grabber.cpp(41) : warning C4996: 'UPhysicsHandleComponent::GrabComponent': Please use GrabComponentAtLocation or GrabComponentAtLocationWithRotation Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2019.03.27-05.24.21:031][275]CompilerResultsLog: Error: C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Engine\Classes\PhysicsEngine/PhysicsHandleComponent.h(89) : note: see declaration of 'UPhysicsHandleComponent::GrabComponent'
+[2019.03.27-05.24.21:031][275]CompilerResultsLog: [2/3] Link UE4Editor-BuildingEscape-2928.dll
+[2019.03.27-05.24.21:031][275]CompilerResultsLog: [3/3] Link UE4Editor-BuildingEscape-2928.lib
+[2019.03.27-05.24.21:032][275]CompilerResultsLog:    Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-2928.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-2928.exp
+[2019.03.27-05.24.21:032][275]CompilerResultsLog:    Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-2928.suppressed.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-2928.suppressed.exp
+[2019.03.27-05.24.21:033][275]CompilerResultsLog: Total build time: 39.77 seconds (Local executor: 3.25 seconds)
+[2019.03.27-05.24.21:033][275]LogMainFrame: MainFrame: Module compiling took 41.120 seconds
+[2019.03.27-05.24.21:090][275]LogContentBrowser: Native class hierarchy updated for 'BuildingEscape' in 0.0022 seconds. Added 4 classes and 2 folders.
+[2019.03.27-05.24.21:093][275]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.03.27-05.24.21:157][275]LogContentBrowser: Native class hierarchy populated in 0.0128 seconds. Added 2457 classes and 562 folders.
+[2019.03.27-05.24.21:158][275]Display: HotReload took 41.4s.
+[2019.03.27-05.24.30:677][303]LogTemp: Repeating last play command: Selected Viewport
+[2019.03.27-05.24.30:704][303]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.03.27-05.24.30:705][303]PIE: New page: PIE session: NewMap (Mar 26, 2019, 5:24:30 PM)
+[2019.03.27-05.24.30:705][303]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2019.03.27-05.24.30:710][303]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005223s)
+[2019.03.27-05.24.30:712][303]LogAIModule: Creating AISystem for world NewMap
+[2019.03.27-05.24.30:712][303]LogPlayLevel: PIE: World Init took: (0.001456s)
+[2019.03.27-05.24.30:713][303]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.007513s)
+[2019.03.27-05.24.30:739][303]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.03.27-05.24.30:761][303]LogInit: FAudioDevice initialized.
+[2019.03.27-05.24.30:799][303]LogLoad: Game class is 'MyBuildingEscapeGameModeBase_BP_C'
+[2019.03.27-05.24.30:801][303]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 60) at 2019.03.26-23.24.30
+[2019.03.27-05.24.30:802][303]LogWorld: Bringing up level for play took: 0.002144
+[2019.03.27-05.24.30:803][303]PIE: Play in editor start time for /Game/UEDPIE_0_NewMap -0.278
+[2019.03.27-05.24.32:532][370]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.32:693][377]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.33:183][402]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.33:877][436]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.34:315][457]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.34:570][470]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.37:857][628]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.37:857][628]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.24.51:215][283]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.52:945][365]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.52:946][365]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.24.53:096][373]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.56:438][533]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.56:440][533]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.24.56:595][541]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.57:176][569]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.57:643][592]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.57:973][608]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.58:072][612]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.58:190][618]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.58:289][623]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.58:391][628]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.58:391][628]LogTemp: Warning: object hit: SM_Chair_2
+[2019.03.27-05.24.58:500][633]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.24.58:587][637]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.24.58:587][637]LogTemp: Warning: object hit: SM_Chair_2
+[2019.03.27-05.24.58:710][644]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.25.03:533][872]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.25.03:631][877]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.27:980][455]LogHotReload: New module detected: UE4Editor-BuildingEscape-8528.dll
+[2019.03.27-05.27.29:003][459]LogHotReload: Starting Hot-Reload from IDE
+[2019.03.27-05.27.29:075][459]LogContentBrowser: Native class hierarchy updated for 'BuildingEscape' in 0.0017 seconds. Added 4 classes and 2 folders.
+[2019.03.27-05.27.29:078][459]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.03.27-05.27.29:136][459]LogContentBrowser: Native class hierarchy populated in 0.0108 seconds. Added 2457 classes and 562 folders.
+[2019.03.27-05.27.29:145][459]Display: HotReload took  0.1s.
+[2019.03.27-05.27.33:157][475]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.03.27-05.27.33:172][476]LogTemp: Repeating last play command: Selected Viewport
+[2019.03.27-05.27.33:205][476]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.03.27-05.27.33:205][476]PIE: New page: PIE session: NewMap (Mar 26, 2019, 5:27:33 PM)
+[2019.03.27-05.27.33:205][476]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2019.03.27-05.27.33:220][476]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014353s)
+[2019.03.27-05.27.33:221][476]LogAIModule: Creating AISystem for world NewMap
+[2019.03.27-05.27.33:221][476]LogPlayLevel: PIE: World Init took: (0.001092s)
+[2019.03.27-05.27.33:221][476]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.016150s)
+[2019.03.27-05.27.33:250][476]LogInit: XAudio2 using 'Speaker/Headphone (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.03.27-05.27.33:274][476]LogInit: FAudioDevice initialized.
+[2019.03.27-05.27.33:324][476]LogLoad: Game class is 'MyBuildingEscapeGameModeBase_BP_C'
+[2019.03.27-05.27.33:325][476]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 60) at 2019.03.26-23.27.33
+[2019.03.27-05.27.33:326][476]LogWorld: Bringing up level for play took: 0.001847
+[2019.03.27-05.27.33:327][476]PIE: Play in editor start time for /Game/UEDPIE_0_NewMap 0.246
+[2019.03.27-05.27.35:417][548]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.35:537][553]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.37:728][639]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.37:729][639]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.37:839][643]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.39:277][698]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.39:278][698]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.41:908][800]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.42:137][809]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.42:139][809]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.45:793][943]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.48:951][ 52]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.48:953][ 52]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.50:082][ 94]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.50:595][113]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.50:595][113]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.53:961][236]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.27.56:389][321]LogTemp: Warning: Key for grabber has been pressed
+[2019.03.27-05.27.56:390][321]LogTemp: Warning: object hit: SM_TableRound_5
+[2019.03.27-05.27.58:672][402]LogTemp: Warning: Key for grabber has been released
+[2019.03.27-05.28.02:755][512]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.03.27-05.28.03:023][514]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap" FILE="../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.03.27-05.28.03:281][514]LogSavePackage: Save=149.33ms
+[2019.03.27-05.28.03:281][514]LogSavePackage: Moving '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Saved/NewMap548A6EA841FF96D8AB05FD829F6909A2.tmp' to '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap.umap'
+[2019.03.27-05.28.03:287][514]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap.umap
+[2019.03.27-05.28.03:406][514]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap_BuiltData" FILE="../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap_BuiltData.uasset" SILENT=true
+[2019.03.27-05.28.03:776][514]LogSavePackage: Save=315.24ms
+[2019.03.27-05.28.03:776][514]LogSavePackage: Moving '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Saved/NewMap_BuiltData5CB000394216BE1C58885D9D8F9DB690.tmp' to '../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap_BuiltData.uasset'
+[2019.03.27-05.28.03:780][514]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/0dps1/Documents/GitHub/BuildingEscape/BuildingEscape/Content/NewMap_BuiltData.uasset
