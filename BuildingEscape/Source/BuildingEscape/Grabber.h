@@ -36,6 +36,16 @@ private:
 	
 	//Ray-cast and grab whats in reach
 	void Grab();
+
+	//Once key is releaced
 	void Release();
+
+	//Checks to see if player has a physics handle
 	void FindPhysicsHandleComponent();
+
+	//setup (assumed) input component
+	void SetupInputComponent();
+
+	//return hit for a physics body in reach
+	FHitResult GetFirstPhysicsBodyInReach() const;
 };
