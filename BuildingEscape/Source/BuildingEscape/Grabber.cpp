@@ -15,20 +15,46 @@ UGrabber::UGrabber()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
 }
-
 
 // Called when the game starts
 void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//UE_LOG(LogTemp, Warning, TEXT("Grabber reporting for duty!"));
-	
+	FindPhysicsHandleComponent();
+
+	InputHandle = GetOwner()->FindComponentByClass<UInputComponent>();
+	if (InputHandle) {
+		///input handle is found
+		///bind input axis
+		InputHandle->BindAction("Grab", IE_Pressed, this, &UGrabber::Grab);
+		InputHandle->BindAction("Grab", IE_Released, this, &UGrabber::Release);
+	}
+	else {
+		UE_LOG(LogTemp, Error, TEXT("No component	 matching input handle found for %s"), *GetOwner()->GetName());
+	}
 }
 
+void UGrabber::Grab() {
+	UE_LOG(LogTemp, Warning, TEXT("Key for grabber has been pressed"));
+}
+
+void UGrabber::Release() {
+	UE_LOG(LogTemp, Warning, TEXT("Key for grabber has been released"));
+}
+
+void UGrabber::FindPhysicsHandleComponent() {
+	/// Look For attached phisics handle
+	PhysicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
+	if (PhysicsHandle) {
+		///physics handle is found
+	}
+	else {
+
+		UE_LOG(LogTemp, Error, TEXT("No component matching physics handle found for %s"), *GetOwner()->GetName());
+	}
+}
 
 // Called every frame
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
