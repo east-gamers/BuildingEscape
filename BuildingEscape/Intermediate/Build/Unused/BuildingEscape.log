@@ -1,12 +1,15 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Compiling game modules for hot reload
-  Performing 3 actions (2 in parallel)
+  Parsing headers for BuildingEscapeEditor
+    Running UnrealHeaderTool "C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\BuildingEscape.uproject" "C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for BuildingEscapeEditor in 11.2864375 seconds
+  Performing 4 actions (2 in parallel)
   Grabber.cpp
-C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Source\BuildingEscape\Grabber.cpp(41): warning C4996: 'UPhysicsHandleComponent::GrabComponent': Please use GrabComponentAtLocation or GrabComponentAtLocationWithRotation Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  Grabber.gen.cpp
+C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Source\BuildingEscape\Grabber.cpp(40): warning C4996: 'UPhysicsHandleComponent::GrabComponent': Please use GrabComponentAtLocation or GrabComponentAtLocationWithRotation Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
   C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Engine\Classes\PhysicsEngine/PhysicsHandleComponent.h(89): note: see declaration of 'UPhysicsHandleComponent::GrabComponent'
-  [2/3] Link UE4Editor-BuildingEscape-8528.dll
-  [3/3] Link UE4Editor-BuildingEscape-8528.lib
-     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8528.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8528.exp
-     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8528.suppressed.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape-8528.suppressed.exp
+  [3/4] Link UE4Editor-BuildingEscape.dll
+  [4/4] Link UE4Editor-BuildingEscape.lib
+     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape.exp
+     Creating library C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape.suppressed.lib and object C:\Users\0dps1\Documents\GitHub\BuildingEscape\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BuildingEscape.suppressed.exp
   Deploying BuildingEscapeEditor Win64 Development...
-  Total build time: 4.34 seconds (Local executor: 2.14 seconds)
+  Total build time: 15.99 seconds (Local executor: 2.23 seconds)

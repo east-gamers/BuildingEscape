@@ -29,7 +29,7 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere)
-		float Reach = 100.0f;
+		float Reach = 200.0f;
 
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 	UInputComponent* InputHandle = nullptr;
@@ -47,5 +47,13 @@ private:
 	void SetupInputComponent();
 
 	//return hit for a physics body in reach
-	FHitResult GetFirstPhysicsBodyInReach() const;
+	FHitResult GetFirstPhysicsBodyInReach();
+
+	//gets the start of the player's viewpoint
+	FVector GetReachLineStart();
+	
+	//returns current end of reach line
+	FVector GetReachLineEnd();
 };
+
+
